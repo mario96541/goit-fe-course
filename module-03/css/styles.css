@@ -1,0 +1,23 @@
+header{
+    text-transform: uppercase;
+}
+div.box1{
+    display: inline-block;
+    width: 50%;
+}
+div.box2{
+    display: inline-block;
+    width: 50%;
+}
+div.box3{
+    display: block;
+    width: 50%;
+}
+div.box4{
+    display: inline-block;
+    width: 50%;
+}
+
+body{
+    color: #626262;
+}
