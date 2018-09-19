@@ -19,7 +19,7 @@
       }
       .site-navigation a {
         display: block;
-        padding: 0 70px;
+        padding: 0px 60px;
         font-size: 14pt;
         color:#626262; 
         font-weight: 500;
@@ -40,12 +40,33 @@
 
 article{
     display: inline-block;
-    padding: 20px 20px 20px 20px;
-    margin: 20px 50px 20px 20px;
-    width: 40%;
     color: #626262;
     font-family: 'Playfair Display Regular';
     font-size: 14pt;
+}
+.box1{
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 190px;
+}
+.box2{
+    padding: 20px 20px 20px 20px;
+    margin: 20px 190px 20px 0px;
+}
+.box3{
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 190px;
+}
+.box4{
+    padding: 20px 20px 20px 20px;
+    margin: 20px 190px 20px 0px;
+}
+p{
+    box-sizing: border-box;
+    width: 416px;
+}
+figure{
+    margin-left: 0;
+    margin-right: 0;
 }
 .button{
     display: block;
