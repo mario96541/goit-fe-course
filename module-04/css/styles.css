@@ -47,15 +47,13 @@ li a:hover {
     color: #1abc9c;
 }
 h1 {
+    display: block;
     font-size: 48px;
     color: #515151;
     text-align: center;
     text-transform: uppercase;
 }
-.top1, top2 {
-    width: 1170px;
-    margin-top: 100px;
-}
+
 h1::after {
     content: " ";
     display: block;
@@ -160,6 +158,11 @@ div.topic {
     width: 350px;
     height: 495px;
     margin-right: 0px;
+}
+.image{
+    box-sizing: border-box;
+    width: 347px;
+    height: 262px;
 }
 h2 {
     font-size: 18px;
