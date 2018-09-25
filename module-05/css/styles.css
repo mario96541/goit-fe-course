@@ -1,0 +1,288 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;    
+}
+
+.page-header {
+    vertical-align: middle;
+    text-align: center;
+    height: 80px;
+}
+
+/* site navigation */
+
+.site-logo{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width: 90px;
+    font-size: 30px;
+    color: #555252;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+}
+
+.site-navigation {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1076px;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    list-style: none;
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation li:not(:last-child){
+    margin-right: 30px;
+}
+
+.site-navigation a {
+    color: #0f0101 ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: rgb( 26, 188, 156 );
+}
+
+
+
+/* main */
+main{
+    background-color: #e9f0fd;
+    padding-bottom: 100px;
+}
+.first {
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    background-image: url(../img/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.top {
+    padding-top: 10px;
+    width: 1110px;
+    color: #ffffff;
+}
+
+h2{
+    margin-top: 230px;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-left: 140px;
+}
+
+.space {
+    margin-top: 120px;
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pe-7s-angle-left,
+.pe-7s-angle-right {
+    font-size: 30px;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin-top: -230px;
+}
+
+.pe-7s-angle-left:hover,
+.pe-7s-angle-right:hover {
+    background-color:rgb( 26, 188, 156 );
+}
+
+div>span.size{
+    font-size: 120px;
+}
+
+/* topic */
+.topic {
+    width: 1170px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #515151;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1::after {
+    content: " ";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin-top: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* products */
+.second{
+    margin-top: 80px;
+}
+
+.card {
+    position: relative;
+    width: 255px;
+    height: 322px;
+    display: inline-block;
+    margin-left: 30px;
+    box-sizing: border-box;
+    background-color: #323232;
+}
+
+.overlay{
+    position: absolute;
+    width: 235px;
+    height: 262px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+
+.pe-7s-like,
+.pe-7s-shuffle,
+.pe-7s-clock,
+.pe-7s-cart {
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.pe-7s-like,
+.pe-7s-shuffle {
+    margin-right: 10px;
+}
+.pe-7s-like,
+.pe-7s-shuffle,
+.pe-7s-clock {
+    border: #ffffff solid 2px;
+}
+
+.inside, .pay, .pe-7s-cart {
+    display: inline-block;
+}
+
+.inside{
+    width: 166px;
+    border: #ffffff solid 2px;
+    background-color: rgb(50, 50, 50);
+    margin-top: 10px;
+}
+
+.pay{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.pe-7s-like:hover,
+.pe-7s-shuffle:hover,
+.pe-7s-clock:hover,
+.inside:hover{
+    background-color:rgb( 26, 188, 156 );
+}
+
+.card:hover {
+    background-color: #1abc9c;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+
+.info {
+    height: 40px;
+    bottom: 100%;
+    box-sizing: border-box;
+    
+}
+.name,.price {
+    color:  #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.name {
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+.price {
+    float: right;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+p {
+    margin-top: 10px;
+}
+
+
+
+/* footer */
+.page-footer{
+    background-color: #000;
+    margin: auto;
+    height: 90px;
+}
+.span {
+    color: rgb(85, 162, 144);
+}
+
+.bot {
+    padding: 38px;
+    color: #fff;
+    text-align: center;
+}
