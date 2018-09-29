@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "droidserif italic";
+    src: url(../fonts/DroidSerif-Italic.woff);
+}
+@font-face {
+    font-family: "montserrat bold";
+    src: url(../fonts/Montserrat-ExtraBold.woff);
+}
+@font-face {
+    font-family: "montserrat regular";
+    src: url(../fonts/Montserrat-Regular.woff);
+}
+@font-face {
+    font-family: "robotoslab";
+    src: url(../fonts/RobotoSlab-Regular.woff);
+}
+@font-face {
+    font-family: "wisdomscript";
+    src: url(../fonts/WisdomScriptAJ.woff);
+}
 body {
     margin: 0;
     padding: 0;
@@ -11,14 +31,14 @@ header{
     float: left;
 }
 .logo p{
-    font-family: "";
+    font-family: "wisdomscript";
     font-size: 26pt;
     color: #fed136;
     line-height: 30px;
     margin-top: 50px;
 }
 nav ul {
-    font-family: "";
+    font-family: "montserrat regular";
     font-size: 14pt;
     list-style: none;
     padding: 0;
@@ -52,7 +72,7 @@ nav ul li a:hover {
 }
 .section_heading p{
     color:black;
-    font-family: "";
+    font-family: "montserrat bold";
     font-size: 40pt;
     margin: 0 auto;
 }
@@ -60,7 +80,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 .section_heading h1 {
-    font-family: "";
+    font-family: "droidserif italic";
     font-size: 16pt;
     text-transform: uppercase;
     margin-top: 25px;
@@ -85,7 +105,7 @@ nav ul li a:hover {
     margin-bottom: 25px;
 }
 h3{
-    font-family: "";
+    font-family: "montserrat bold";
     font-size: 18pt;
     margin: 0;
     text-transform: uppercase;
@@ -94,14 +114,14 @@ h3{
 }
 .flexbox article {
     text-align: center;
-    font-family: "";
+    font-family: "robotoslab";
     font-size: 14px;
     color: #777777;
     padding-top: 17px;
 }
 .contact_us h1{
     text-align: center;  
-    font-family: "";
+    font-family: "montserrat bold";
     font-size: 40pt;
     color: white;
     text-transform: uppercase;
@@ -110,7 +130,7 @@ h3{
 }
 .contact_us article{
     text-align: center;  
-    font-family: "";
+    font-family: "droidserif italic";
     font-size: 16pt;
     color: #777777;
     margin: 0 auto;
@@ -159,7 +179,13 @@ h3{
     border: none;
     background-color: #fed136;
     color: #ffffff;
-    font-family: "";
+    font-family: "montserrat bold";
     font-size: 18pt;
     text-transform: uppercase;
 }
+input:invalid {
+    outline: 1px solid red; 
+   }
+input:valid {
+    outline: 1px solid green; 
+   }
