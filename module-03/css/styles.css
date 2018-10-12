@@ -1,15 +1,15 @@
 html {
     box-sizing: border-box;
 }
-  .masthead {
-    max-width: 960px;
-    margin: auto;
-    height: 100px;
+  .header {
+    max-width: 1200px;
+    margin-left: 28%;
+    margin-right: 28%;
     line-height: 100px;
   }
   .site-navigation {
     margin: auto;
-    font-family: 'Playfair Display Regular';
+    font-family: 'Playfair Display', serif;
     list-style: none;
   }
   .site-navigation li {
@@ -30,26 +30,35 @@ html {
   .site-navigation a:focus {
     color: #ff4081;
   }
-  .clearfix {
-    display: table;
+  .clearfix::after { 
+    display: block;
     content: "";
-    clear: both;
-  }
+    clear: both; 
+  } 
 h2 {
-    text-align: center;
+    font-size: 22pt;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
-.container{
+figcaption{
+  font-size: 14pt;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:#b4ad9e;
+}
+.wrapper{
     width: 900px;
     margin: 0 auto;
 }
 .box{
 width:420px;
-height:505px;
 color:#626262;
 box-sizing: border-box;
 float: left;
 margin-right: 60px;
-margin-bottom: 130px;
+margin-bottom: 60px;
+margin-top: 70px;
+font-family: 'Playfair Display', serif;
 }
 .box:nth-child(2n) {
     margin-right: 0;
@@ -57,22 +66,25 @@ margin-bottom: 130px;
 .img{
     margin: 0;
 }
-.button{
+.more-link{
 display: inline-block;
 text-decoration: none;
 color:#626262;
 text-align: center;
-font-family: 'Playfair Display Regular';
+font-family: 'Playfair Display', serif;
 font-size: 20pt;
 border: solid 1px #626262;
-padding: 20px 40px;
+padding-top: 22px;
+padding-right: 34px;
+padding-bottom: 22px;
+padding-left: 34px;
 margin: 5px 43%;
 }
-.button:hover {
+.more-link:hover {
     color: #03a9f4;
     border-color: #03a9f4;
 }
-.button:focus {
+.more-link:focus {
     color: #ff4081;
     border-color: #ff4081;
 }
