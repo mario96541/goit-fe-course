@@ -119,6 +119,7 @@ h3{
     background-image: url(../img/footer-1.png);
     background-color: #222222;
     background-repeat: no-repeat;
+    background-position: right;
     margin: auto;
     height: 700px;
 }
