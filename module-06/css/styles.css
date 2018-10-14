@@ -1,14 +1,15 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 header{
+    display: flex;
+    justify-content: space-between;
     width: 1220px;
     height: 80px;
     margin: 0 auto;
 }
 .logo {
-    float: left;
     margin-left: 9px;
     margin-top: 10px;
 }
@@ -19,18 +20,18 @@ header{
     color: #95e1d3;
     line-height: 30px;
 }
-
 nav ul {
     font-family: "montserrat bold";
     font-size: 14px;
     list-style: none;
     padding: 0;
     margin-top: 45px;
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
 }
 nav ul li {
-    float: right;
-    margin-left: 49px;
+    margin-left: 45px;
 }
 nav ul li:first-child {
     margin-left: 0px;
@@ -212,7 +213,7 @@ h4{
     margin: 0px;
 }
 .social ul li {
-    display: inline-block;
+    display: inline-flex;;
     list-style: none;
     height: 58px;
     width: 58px;
@@ -300,7 +301,8 @@ figcaption span {
     margin-left: auto;
 }
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin: 287px auto 0 auto;;
     width: 1200px;
     height: 64px;
@@ -313,14 +315,8 @@ footer p{
     margin-top: 25px;
     margin-left: 10px;
 }
-.copyrights {
-    float: left;
-}
 footer p span {
     color: #f38181;
-}
-form {
-    float: right;
 }
 input {
     height: 20px;

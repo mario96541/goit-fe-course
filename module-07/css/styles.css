@@ -1,50 +1,29 @@
-@font-face {
-    font-family: "droidserif italic";
-    src: url(../fonts/DroidSerif-Italic.woff);
-}
-@font-face {
-    font-family: "montserrat bold";
-    src: url(../fonts/Montserrat-ExtraBold.woff);
-}
-@font-face {
-    font-family: "montserrat regular";
-    src: url(../fonts/Montserrat-Regular.woff);
-}
-@font-face {
-    font-family: "robotoslab";
-    src: url(../fonts/RobotoSlab-Regular.woff);
-}
-@font-face {
-    font-family: "wisdomscript";
-    src: url(../fonts/WisdomScriptAJ.woff);
-}
 body {
     margin: 0;
     padding: 0;
 }
 header{
-    width: 1200px;
+    width: 940px;
     height: 80px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
-.logo {
-    float: left;
+.logo{
+    margin-top: 44px;
 }
-.logo p{
+.logo a{
+    text-decoration: none;
     font-family: "wisdomscript";
-    font-size: 26pt;
+    font-size: 26px;
     color: #fed136;
     line-height: 30px;
-    margin-top: 50px;
 }
 nav ul {
     font-family: "montserrat regular";
-    font-size: 14pt;
+    font-size: 14px;
     list-style: none;
-    padding: 0;
-    float: right;
-    margin-top: 50px;
-    margin-left: 370px;
+    margin-top: 55px;
 }
 nav ul li {
     display: inline;
@@ -70,18 +49,19 @@ nav ul li a:hover {
     text-align: center;
     margin-top: 130px;
 }
-.section_heading p{
+.section_heading h2{
     color:black;
     font-family: "montserrat bold";
-    font-size: 40pt;
+    font-size: 40px;
     margin: 0 auto;
-}
-.section_heading p::first-letter {
     text-transform: uppercase;
 }
-.section_heading h1 {
+.section_heading h2::first-letter {
+    text-transform: uppercase;
+}
+.section_heading p {
     font-family: "droidserif italic";
-    font-size: 16pt;
+    font-size: 16px;
     text-transform: uppercase;
     margin-top: 25px;
     margin-bottom: 80px;
@@ -90,15 +70,14 @@ nav ul li a:hover {
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: space-around;
-    width: 1200px;
+    width: 940px;
     height: 335px;
     margin: 0 auto;
 }
 .item {
     width: 280px;
-    height: 190px;
 }
 .icon{
     text-align: center;
@@ -106,32 +85,32 @@ nav ul li a:hover {
 }
 h3{
     font-family: "montserrat bold";
-    font-size: 18pt;
+    font-size: 18px;
     margin: 0;
     text-transform: uppercase;
     color: black;
     text-align: center;
 }
-.flexbox article {
+.flexbox p {
     text-align: center;
     font-family: "robotoslab";
     font-size: 14px;
     color: #777777;
     padding-top: 17px;
 }
-.contact_us h1{
+.contact_us h2{
     text-align: center;  
     font-family: "montserrat bold";
-    font-size: 40pt;
+    font-size: 40px;
     color: white;
     text-transform: uppercase;
     padding-top: 113px;
     margin: 0 auto;
 }
-.contact_us article{
+.contact_us p{
     text-align: center;  
     font-family: "droidserif italic";
-    font-size: 16pt;
+    font-size: 16px;
     color: #777777;
     margin: 0 auto;
     padding: 0 auto; 
@@ -147,41 +126,46 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1200px;
+    width: 940px;
     height: 305px;
-    margin: 0 auto; 
+    margin: 76px auto auto auto; 
 }
 .name, .email, .subject{
     display: flex;
     justify-content: center;
 }
-.column{ flex-direction: column; }
+.column{
+     flex-direction: column; 
+}
 
-.name, .email, .subject{
+.email, .subject{
     height: 50px;
-    width: 455px;
-    margin: 30px 30px;
+    width: 452px;
+    margin: 30px 30px 30px 0;
     border: none;
 }
 .name{
-    margin-top: 80px;
+    height: 50px;
+    width: 452px;
+    margin: 0 30px 30px 0;
+    border: none;
 }
 .message{
     text-align: left;
     padding: 0;
-    margin-top: 80px;
     height: 210px;
-    width: 455px;
+    width: 452px;
 }
 .submit {
     display: flex;
+    justify-content: center;
     height: 66px;
     width: 240px;
     border: none;
     background-color: #fed136;
     color: #ffffff;
     font-family: "montserrat bold";
-    font-size: 18pt;
+    font-size: 18px;
     text-transform: uppercase;
 }
 input:invalid {
