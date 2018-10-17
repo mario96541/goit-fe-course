@@ -128,17 +128,17 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-.item {
-    width: 380px;
-    height: 90px;
-    /* margin: 40px 10px; */
+.item_name{
+    width: 300px;
 }
-.item .figure{
-    float: left;
-    width: 80px;
-    text-align: center;
-    padding-top: 3px;
-    height: 100%;
+.item {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.figure{
+    margin-top: 3px;
+    margin-right: 30px;
 }
 h3{
     font-family: "montserrat";
@@ -181,18 +181,30 @@ h4{
     transform: translate( 0px, 0px);
     transition-duration: 1s;
 }
-.foto:nth-child(2) {
+.foto_second{
     background-image: url(../img/foto2.jpg);
+    width: 380px;
+    height: 470px;
+    margin: 0px;
+    transition-property: transform ;
+    transform: translate( 0px, 0px);
+    transition-duration: 1s;
 }
-.foto:last-child {
+.foto_last{
     background-image: url(../img/foto3.jpg);
+    width: 380px;
+    height: 470px;
+    margin: 0px;
+    transition-property: transform ;
+    transform: translate( 0px, 0px);
+    transition-duration: 1s;
 }
 .social {
     opacity: 0;
     transition-property: all;
     transition-duration: 1s;
 }
-.foto:hover {
+.foto:hover, .foto_last:hover, .foto_second:hover{
     transform: translate( -10px, -10px);
     transition-duration: 1s;
     transition-property: transform, box-shadow;
@@ -322,7 +334,8 @@ input {
     height: 20px;
     width: 210px;
     border: 1px solid #e7e7e7;
-    margin: 12px -30px 0 0;
+    margin-top: 12px;
+    margin-right: 0;
     font-family: "roboto light italic";
     font-size: 15px;
     padding: 10px;
@@ -333,11 +346,15 @@ input::placeholder {
 button {
     height: 42px;
     width: 150px;
-    margin: 0 0px 0px 25px;
+    margin: 0;
     border: none;
     background-color: #95e1d3;
     color: #ffffff;
     font-family: "montserrat bold";
     font-size: 14px;
     text-transform: uppercase;
+    transform: translateX(-3.5%);
+}
+.copyrights{
+margin-right: 507px;
 }
