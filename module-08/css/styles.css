@@ -77,6 +77,7 @@ body{
     margin: 0 20px 33px 20px ;
 }
 .link_button{
+    display: inline-block;
     padding: 13px 50px;
     background-color:#ff4e50;
     color:white;
@@ -123,6 +124,7 @@ body{
     .phrase {
         width: 100%;
         font-size: 24px;
+        margin-left: 0;
         margin-bottom: 35px;
       }
     .link_button {
@@ -137,6 +139,9 @@ body{
     .find{
         width: 556px;
         margin: 0 auto;
+        }
+    .phrase {
+        margin-left: 0;
         }
 }
 /*header*/
@@ -159,6 +164,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 14px;
+    margin-top: 0;
     margin-bottom: 18px;
 }
 .partner_info{
@@ -166,6 +172,7 @@ body{
     font-weight: 300;
     font-size: 14px;
     color:#666666;
+    margin: 0 auto;
 }
 .partner_picture {
     border-radius: 50%;
@@ -239,7 +246,6 @@ body{
     color:#ff4e50;
     border-radius: 30px;
     padding: 13px 50px;
-    margin-bottom: 57px;
 }
 .section_btn:hover{
     border: 2px solid #ff4e50;
