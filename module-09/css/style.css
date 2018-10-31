@@ -78,7 +78,6 @@
     margin-bottom: 14px;
     padding-right: 7px;
 }
-
 .partner_picture {
     border-radius: 50%;
 }
@@ -188,6 +187,11 @@
     background-color: #ff4e50;
     color: #ffffff
 }
+.partner {
+    width: 236px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media (min-width: 768px) {
     .section_title {
@@ -197,7 +201,9 @@
     }
 
     .partner {
-        width: 100%;
+        width: 236px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
